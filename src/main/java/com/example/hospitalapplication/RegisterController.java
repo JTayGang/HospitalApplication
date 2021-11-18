@@ -122,6 +122,9 @@ public class RegisterController implements Initializable {
             errorMessage += "Last name cannot be empty\n";
         }
 
+
+        // TODO: Validate if date of birth is legal. That is, make sure the date is not higher than the current date
+
         // Validate date of birth
         if (String.valueOf(myDatePicker.getValue()) == null || String.valueOf(myDatePicker.getValue()).trim().isEmpty()) {
             System.out.println("Date of Birth cannot be empty");
